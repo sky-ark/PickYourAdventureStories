@@ -1,0 +1,83 @@
+{
+	"StoryName": "Editor",
+	"ImageName": "",
+	"StartingThumbnailId": "pomme",
+	"Thumbnails": [
+		{
+			"Id": "pomme",
+			"ImageName": "",
+			"SfxName": "",
+			"MusicName": "",
+			"Description": "Tu vois une pomme",
+			"Choices": [
+				{
+					"Description": "la prendre",
+					"ThumbnailLinkId": "voleur",
+					"NeededItemsId": [],
+					"GivenItemsId": [
+						"pomme"
+					],
+					"TakenItemsId": []
+				},
+				{
+					"Description": "la laisser",
+					"ThumbnailLinkId": "voleur",
+					"NeededItemsId": [],
+					"GivenItemsId": [],
+					"TakenItemsId": []
+				}
+			]
+		},
+		{
+			"Id": "voleur",
+			"ImageName": "",
+			"SfxName": "",
+			"MusicName": "",
+			"Description": "On te crie au voleur ! ",
+			"Choices": [
+				{
+					"Description": "rendre la pomme",
+					"ThumbnailLinkId": "rendu",
+					"NeededItemsId": [
+						"pomme"
+					],
+					"GivenItemsId": [],
+					"TakenItemsId": [
+						"pomme"
+					]
+				},
+				{
+					"Description": "dire que tu ne l'as pas et la retrouver",
+					"ThumbnailLinkId": "pomme",
+					"NeededItemsId": [],
+					"GivenItemsId": [],
+					"TakenItemsId": []
+				}
+			]
+		},
+		{
+			"Id": "rendu",
+			"ImageName": "",
+			"SfxName": "",
+			"MusicName": "",
+			"Description": "le marchand te remercie",
+			"Choices": [
+				{
+					"Description": "Partir",
+					"ThumbnailLinkId": "",
+					"NeededItemsId": [],
+					"GivenItemsId": [],
+					"TakenItemsId": []
+				}
+			]
+		}
+	],
+	"Items": [
+		{
+			"Id": "pomme",
+			"ItemName": "pomme",
+			"IconName": "pomme.svg",
+			"Description": "c est une pomme"
+		}
+	]
+}
